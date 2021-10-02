@@ -1,9 +1,16 @@
 .fondo
 {  
+    width: 100%;
+    height: 100%;
     background-color: bisque;
 }
 .ventana_1
-{
-    border-color: cadetblue;
-    margin: 80%;
+{   height: 500px;
+   
+    align-items: center;
+    justify-content:space-around;
+    border-radius: center;
+   
+    background-color: cadetblue;
+    border: solid;
 }
