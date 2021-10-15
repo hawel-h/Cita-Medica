@@ -6,20 +6,120 @@
         <link rel="stylesheet" href="styles/style.css"/>
         <title>Hello, World!</title>
     </head>
+    
     <body class="fondo">
         <form>
         
-            <div class="ventana_1">
-                <button >Agendar Cita</button>
-                <button>Lista de Citas</button>
+            <div class="ventana_1" id="ventana">
+                <input type="button" class="boton_Agendar_cita" id="agnCita" value="Agendar Cita" onclick="agendarCita(this)">
+                <input type="button" value="Lista de Citas" onclick="listaCita()">
+                <input type="button" class="boton_Agendar_cita" id="busCita" value="Buscar" onclick="agendarCita(this)">
+
+                <div class="Agendar_Cita" id="agendar" style="display: none">
+                    <br>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                    <br>
+                    <br>
+                   <!--<label for="apellido">Apellidos:</label>
+                    <input type="texto" id="apellido" placeholder="Apellido">
+                    <br>
+                    <br>-->
+                    <label for="identificacion">Identificacion:</label>
+                    <input type="texto" id="identificacion" placeholder="identificacion">
+                    <br>
+                    <br>
+                    <label for="telefono">Telefono:</label>
+                    <input type="texto" id="telefono" placeholder="Telefono">
+                    <br>
+                    <br>
+                    <label for="fecha">Fecha de la Cita:</label>
+                    <input type="date" id="fecha">
+                    <br>
+                    <br>
+                    <label for="hora">Hora de la Cita:</label>
+                    <input type="time" id="hora" list="limiteTiempo" min="08:00" max="16:00" step="3600">
+                    <datalist id="limiteTiempo">
+                    <option value="08:00">
+                    <option value="09:00">
+                    <option value="10:00">
+                    <option value="11:00">
+                    <option value="13:00">
+                    <option value="14:00">
+                    <option value="15:00">
+                    <option value="16:00">
+                    </datalist>
+                    <br>
+                    <br>
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" cols="44" rows="8" style="resize:none"></textarea>
+                    <input type="button" id="botonAgenBusc" value="Agendar" onclick="">
+                    <input type="button" value="Regresar" onclick="regresar()">
                 
-                <h1>
-                    Hello, World22!
-                </h1>
+                </div>
+                <div class="Agendar_Cita" id="Buscar" style="display: none">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    
+                    <br>
+                    <br>
+                    <label for="buscarNombre">Nombre:</label>
+                    <input type="text" id="buscarNombre" placeholder="Nombre">
+                    <br>
+                    <br>
+                   <!--<label for="apellido">Apellidos:</label>
+                    <input type="texto" id="apellido" placeholder="Apellido">
+                    <br>
+                    <br>-->
+                    <label for="buscarIdentificacion">Identificacion:</label>
+                    <input type="texto" id="buscarIdentificacion" placeholder="identificacion">
+                    <br>
+                    <br>
+                    <label for="fechaInicial">Fecha inicial:</label>
+                    <input type="date" id="fechaInicial">
+                    <br>
+                    <br>
+                    <label for="fechaFinal">Fecha Final:</label>
+                    <input type="date" id="fechaFinal">
+                    <br>
+                    <br>
+                    <label for="selecBusqueda">Estado:</label>
+                    <select id="selecBusqueda" value="">
+                    <option value="none">Buscar Estado</option>
+                    <option value="Agendada">Agendada</option>
+                    <option value="Expirada">Expirada</option>
+                    <option value="Atendido">Atendido</option>
+                    <option value="Cancelada">Cancelada</option>
+                    </select>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <input type="button" id="botonBuscar" value="Buscar" onclick="Buscar()">
+                    <input type="button" value="Regresar" onclick="regresar()">
+                    
+                </div>
+                <div class="Lista_Cita" id="listaDeCita" style="display:none"> 
+                    <h1 >Listas Agendadas:</h1>
+                    <ul id="lista">
+                    </ul>
+                </div>
+                <div class="Lista_Cita" id="burcarCita" style="display:none"> 
+                    <h1 >Busqueda de Citas Agendadas:</h1>
+                    <ul id="Buscarlista">
+                    </ul>
+                </div>
             </div>
+            
+           
+                
         
     </form>
         <script src="scripts/script.js"></script>
-        <script type="text/javascript"></script>
+          
     </body>
 </html>

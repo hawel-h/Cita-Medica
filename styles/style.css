@@ -5,12 +5,51 @@
     background-color: bisque;
 }
 .ventana_1
-{   height: 500px;
-   
-    align-items: center;
+{  
+    
+    height: 500px;
     justify-content:space-around;
     border-radius: center;
-   
     background-color: cadetblue;
     border: solid;
+}
+.boton_Agendar_cita
+{   
+    border-radius: 10%;
+    border-color: darkgrey;
+}
+.Agendar_Cita
+{
+    margin-top: 5%;
+    display: flexbox;
+    margin-left: 25%;
+    border-radius: 5%;
+    width: 350px;
+    height: 400px;
+    border: solid 5px rgb(175, 175, 175);
+    background-color: blanchedalmond;
+    align-items : center;
+    justify-content: center;
+}
+.Lista_Cita
+{
+    margin-top: 5%;
+    display: flexbox;
+    margin-left: 8%;
+    border-radius: 5%;
+    width: 600px;
+    height: 400px;
+    border: solid 5px rgb(175, 175, 175);
+    background-color: rgb(69, 203, 226);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.boton_Regresar_cita
+{   
+    margin-top: 380px ;
+    margin-left: 500px ;
+    border-radius: 3%;
+    border-color: darkgrey;
 }
